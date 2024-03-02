@@ -1,4 +1,5 @@
-import { Component, useEffect, useState } from 'react'
+import { Component, useEffect, useState } from 'react';
+import { ReactDOM } from "react";
 import axios from 'axios';
 
 const AdviceFetch = () =>{

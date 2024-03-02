@@ -1,13 +1,14 @@
 import React, { useState } from 'react';
 import dice from './assets/icon-dice.svg';
-import dividerMobile from './assets/pattern-divider-mobile.svg'
-import './App.css'
+import dividerMobile from './assets/pattern-divider-mobile.svg';
+import './App.css';
 
 const RotateButton = () => {
     const [isRotated, setRotated] = useState(false);
   
     const handleButtonClick = () => {
       setRotated(!isRotated);
+      window.location.reload();
     };
 
   
@@ -27,3 +28,4 @@ const RotateButton = () => {
   };
 
 export default RotateButton;
+
