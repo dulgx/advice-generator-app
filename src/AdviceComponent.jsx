@@ -12,8 +12,9 @@ const AdviceComponent = () => {
             <div id="QQQ">
                 <AdviceFetch />
             </div>
+
             <img id="Divider" src={dividerDesktop} alt="divider" />
-            <RotateButton />
+            <RotateButton />        
         </div>
     )
 };

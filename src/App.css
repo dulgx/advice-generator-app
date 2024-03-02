@@ -7,6 +7,7 @@
   --dark-blue: hsl(218, 23%, 16%);
 }
 
+
 body{
   background-color: var(--dark-blue);
   height: 100vh;
@@ -38,6 +39,7 @@ h3{
   font-size: 1.75rem;
   font-weight: 800;
   text-align: center;
+  margin-top: 50px;
 }
 #Dice{
   height: 35px;
@@ -46,12 +48,13 @@ h3{
 #DiceBack{
   border-radius: 50%;
     background-color: var(--neon-green);
-    width: 65px;
-    height: 70px;
+    width: 55px;
+    height: 75px;
     display: flex;
     justify-content: center;
     position: relative;
     top: 70px;
+    left: 5px;
     align-content: center;
     flex-wrap: wrap;
     border-style: none;
@@ -62,4 +65,24 @@ h3{
 #Divider{
   width: fit-content;
   height: fit-content;
+}
+
+
+@media only screen and (max-width: 768px) {
+  .section{
+    width: 250px;
+    height: 500px;
+    font-size: 1.6rem;
+  }
+  #QQQ{
+    width: 250px;
+  }
+  #Divider{
+    width: 250px;
+    margin-top: 60px;
+  }
+  #DiceBack{
+    left: -5px;
+    top: 90px;
+  }
 }
