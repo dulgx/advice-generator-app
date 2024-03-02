@@ -3,12 +3,16 @@ import axios from 'axios';
 
 const AdviceFetch = () =>{
     const [advice, setAdvice] = useState('');
+    const [adviceId, setAdviceId] = useState('');
 
     useEffect(() => {
         const fetchAdvice = async () => {
           try {
             const response = await axios.get('https://api.adviceslip.com/advice');
-            setAdvice(response.data.slip.advice);
+            const { slip } = response.data;
+            
+            setAdviceId(slip.id);
+            setAdvice(slip.advice);
           } catch (error) {
             console.error('Error fetching advice:', error);
           }
@@ -18,7 +22,11 @@ const AdviceFetch = () =>{
       }, []);
     
       return (
-          <p>{advice}</p>
+        <div>
+            <h3 id="Advice">Advice #{adviceId}</h3>
+            <p>"{advice}"</p>
+        </div>
+          
       );
     };
 
