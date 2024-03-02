@@ -23,9 +23,8 @@ body{
   background-color: var(--dark-grayish-blue);
   width: 700px;
   height: 350px;
-  padding: 30px;
-  border-radius: 20px;
-}
+  padding: 2rem;
+  border-radius: 20px;}
 h3{
   display: flex;
   justify-content: center;
@@ -39,7 +38,6 @@ h3{
   font-size: 1.75rem;
   font-weight: 800;
   text-align: center;
-  margin-top: 50px;
 }
 #Dice{
   height: 35px;
@@ -48,8 +46,8 @@ h3{
 #DiceBack{
   border-radius: 50%;
     background-color: var(--neon-green);
-    width: 55px;
-    height: 75px;
+    width: 65px;
+    height: 85px;
     display: flex;
     justify-content: center;
     position: relative;
@@ -72,7 +70,7 @@ h3{
   .section{
     width: 250px;
     height: 500px;
-    font-size: 1.6rem;
+    font-size: 1.4rem;
   }
   #QQQ{
     width: 250px;
